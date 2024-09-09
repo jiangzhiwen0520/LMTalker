@@ -151,8 +151,8 @@
 
     <div class="section">
         <h2>Framework</h2>
-        <img src="index_assets/framework2.png" alt="Framework Diagram">
-        <p class="image-caption">Overview of our proposed framework. We begin with a complete and clean head Gaussian initialized through an effective strategy. During training, the head and inner mouth Gaussians are learned jointly via two deformation modules, using landmarks as intermediate representations. The \( \Delta\mu \) is calculated as a weighted sum of displacements from its nearest \( K \) landmarks. In the inference phase, a pre-trained audio-to-motion model generates landmark sequences to drive the Gaussian deformations.</p>
+        <img src="index_assets/framework.png" alt="Framework Diagram">
+        <p class="image-caption">Overview of our proposed framework. We begin with the canonical Gaussian $\mathcal{G}_c$  through a smooth-and-merge initialization. During training, we utilize landmarks as guidance to jointly learn the deformations of the head and inner mouth Gaussians through two deformation modules. The $\Delta\mu$ is calculated as a weighted sum of displacements from its nearest $K$ landmarks. The deformed Gaussians are rendered and stitched together to produce the final result $I'_{full}$. During inference, a pre-trained audio-to-motion model PitchVAE generates landmark sequences to drive the Gaussian deformations.</p>
     </div>
 
     <div class="section">
@@ -200,7 +200,7 @@
         
         <div class="video-container">
             <video controls>
-                <source src="index_assets/ablation.mp4" type="video/mp4">
+                <source src="index_assets/ablation_study.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
