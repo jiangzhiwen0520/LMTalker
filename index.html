@@ -152,7 +152,7 @@
     <div class="section">
         <h2>Framework</h2>
         <img src="index_assets/framework.png" alt="Framework Diagram">
-        <p class="image-caption">Overview of our proposed framework. We begin with the canonical Gaussian $\mathcal{G}_c$  through a smooth-and-merge initialization. During training, we utilize landmarks as guidance to jointly learn the deformations of the head and inner mouth Gaussians through two deformation modules. The $\Delta\mu$ is calculated as a weighted sum of displacements from its nearest $K$ landmarks. The deformed Gaussians are rendered and stitched together to produce the final result $I'_{full}$. During inference, a pre-trained audio-to-motion model PitchVAE generates landmark sequences to drive the Gaussian deformations.</p>
+        <p class="image-caption">Overview of our proposed framework. We begin with the canonical Gaussian $\mathcal{G}_c$  through a smooth-and-merge initialization. During training, we utilize landmarks as guidance to jointly learn the deformations of the head and inner mouth Gaussians through two deformation modules. The $\Delta\mu$ is calculated as a weighted sum of displacements from its nearest $K$ landmarks. The deformed Gaussians are rendered and stitched together to produce the final result $I'_{full}$. During inference, we adopt the pre-trained audio2motion model to generate the motion of landmarks that guide the Gaussians deformations.</p>
     </div>
 
     <div class="section">
